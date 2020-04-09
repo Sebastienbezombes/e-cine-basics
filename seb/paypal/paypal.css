@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "roboto-reg";
+    src: url("font/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto-ita";
+    src: url("font/Roboto-Italic.ttf") format("truetype");
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202020;
+    /*background: rgb(255,133,0);
+    background: linear-gradient(150deg, rgba(255,133,0,1) 0%, rgba(255,191,121,1) 100%);*/
+}
+
+.paypal {
+    width: 600px;
+    height: 500px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-paypal {
+    font-size: 32px;
+    margin-left: 20px;
+    font-family: "roboto-bold";
+}
+.description-title-paypal, .conditions-paypal {
+    line-height: 27px;
+}
+.description-title-paypal, .mail-paypal, .conditions-paypal, .cta-paypal {
+    font-size: 18px;
+    margin: 0 20px 0 20px;
+}
+.description-title-paypal, .mail-paypal, .conditions-paypal {
+    font-family: "roboto-reg";
+}
+
+.cta-change-payement {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FF8500;
+    cursor: pointer;
+    font-family: "roboto-ita";
+}
+
+.cta-paypal {
+    width: 570px;
+    height: 50px;
+    background: none;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: space-between;
+    margin: 0 15px 0 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "roboto-bold";
+    color: white;
+}
+.cta-paypal:hover {
+    background: orangered;
+}
+
+.infos-paypal {
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 570px;
+    height: 85px;
+    margin: 0 15px 0 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.paypal-icon, .mail-paypal {
+    height: 20px;
+}
+
+.infos-paypal .paypal-icon {
+    margin-left: 20px;
+}
