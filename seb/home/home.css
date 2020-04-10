@@ -17,7 +17,7 @@
 body {
     background: url("img/fond-color_home.png"),
                 url("img/fond-img-home.png");
-                overflow: hidden;
+                overflow-x: hidden;
 }
 
 .cta-home {
@@ -41,7 +41,7 @@ body {
 }
 
 .center-home {
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
