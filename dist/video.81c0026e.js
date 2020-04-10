@@ -209,7 +209,12 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\Elite-Netflix-saison-3-1.png":[["Elite-Netflix-saison-3-1.a0fec4d8.png","assets/Elite-Netflix-saison-3-1.png"],"assets/Elite-Netflix-saison-3-1.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\casadelpapel_episode.png":[["casadelpapel_episode.53998fba.png","assets/casadelpapel_episode.png"],"assets/casadelpapel_episode.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\valide-episode.png":[["valide-episode.2be05a19.png","assets/valide-episode.png"],"assets/valide-episode.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\Elite-Netflix-saison-3-1.png":[["Elite-Netflix-saison-3-1.a0fec4d8.png","assets/Elite-Netflix-saison-3-1.png"],"assets/Elite-Netflix-saison-3-1.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\casadelpapel_episode.png":[["casadelpapel_episode.53998fba.png","assets/casadelpapel_episode.png"],"assets/casadelpapel_episode.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\valide-episode.png":[["valide-episode.2be05a19.png","assets/valide-episode.png"],"assets/valide-episode.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/miniaturedown.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\assets\\flash.png":[["flash.9eaa7f28.png","assets/flash.png"],"assets/flash.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -237,7 +242,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60548" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50189" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

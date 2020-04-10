@@ -3,22 +3,28 @@
   padding: 0;
 }
 
-.miniature--up {
-  background-image: url("../assets/casadelpapel.png");
+.miniature--down {
+  background-image: url("../assets/flash.png");
+  /* background: linear-gradient(
+    115.96deg,
+    #000000 22.54%,
+    rgba(0, 0, 0, 0) 51.81%
+  ); */
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
+  margin-top: 250px;
 }
 
-.miniature_info--up button {
+.miniature_info button {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.miniature_title {
+.miniature_title--down {
   position: absolute;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-top: 50px;
   width: 269px;
   height: 76px;
@@ -28,9 +34,16 @@
   font-weight: bold;
 }
 
-.miniature_director--up {
+.miniature_synopsis--titre {
   position: absolute;
-  margin-left: 40px;
+  font-weight: bold;
+}
+.miniature_synopsis {
+  display: flex;
+  flex-wrap: wrap;
+  width: 410px;
+  position: absolute;
+  margin-left: 25px;
   margin-top: 135px;
 }
 
@@ -45,15 +58,15 @@ button {
   margin-top: 180px;
 }
 
-.miniature-ctafilm {
+.miniature-ctafilm--down {
   font-family: "Raleway";
   font-weight: bold;
-  margin-left: 280px;
   background-color: #ff8500;
   border: none;
   width: 210px;
   height: 40px;
-  margin-top: 180px;
+  margin-top: 220px;
+  margin-left: 50px;
 }
 
 .miniature-ctainfo {
@@ -64,6 +77,16 @@ button {
   width: 210px;
   height: 40px;
   margin-top: 180px;
+}
+
+.miniature-info--teaser {
+  position: absolute;
+  background-color: white;
+  border: 2px solid #ff8500;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 220px;
+  margin-left: 280px;
 }
 
 .miniature-ctainfo img {
