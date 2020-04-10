@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: black;
+  height: 85px;
+}
+
+.header_first {
+  width: 10%;
+  margin-right: 25px;
+  margin-left: 30px;
+}
+
+.header_logo {
+  width: 96px;
+  height: 25px;
+}
+
+.header_nav {
+  display: flex;
+  width: 22%;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+}
+
+.nav_first {
+  color: white;
+  text-decoration: none;
+}
+
+.header_second {
+  width: 30%;
+  margin-left: 257px;
+}
+
+.header_form {
+  width: 220px;
+  height: 40px;
+  padding-right: 30px;
+  background: #3d3d3d;
+  border-radius: 5px;
+  border: 1px solid #3d3d3d;
+}
+
+::placeholder {
+  background-image: url(/Vector.2b70d266.png);
+  background-repeat: no-repeat;
+  background-position-x: 30px;
+  background-size: contain;
+  text-align: end;
+  color: white;
+}
+
+.header_account {
+  width: 5%;
+}
+
+.account_logo {
+  width: 38px;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto";
+  color: white;
+  background-color: black;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.miniature {
+  background-image: url("/casadelpapel.71136ed2.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.miniature_info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniature_title {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 50px;
+  width: 269px;
+  height: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.miniature_director {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 135px;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  position: absolute;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctafilm {
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-left: 280px;
+  background-color: #ff8500;
+  border: none;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctainfo {
+  font-family: "Raleway";
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctainfo img {
+  margin-left: 10px;
+}
+
+.miniature-ctafilm img {
+  margin-left: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section .resume {
+  height: 235px;
+}
+.resume_profil {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 25px;
+}
+
+.resume_miniature {
+  /* background: linear-gradient(
+    178.83deg,
+    #000000 10.59%,
+    rgba(196, 196, 196, 0) 66.64%
+  ); */
+  width: 311px;
+  height: 190px;
+  margin-top: 33px;
+  margin-left: 25px;
+}
+
+.resume_miniature--elite {
+  position: absolute;
+  background-image: url("/Elite-Netflix-saison-3-1.a0fec4d8.png");
+  background-repeat: no-repeat;
+}
+
+.resume_miniature--casadelpapel {
+  position: absolute;
+  margin-left: 352px;
+  background-image: url("/casadelpapel_episode.53998fba.png");
+  background-repeat: no-repeat;
+}
+
+.resume_miniature--valide {
+  position: absolute;
+  margin-left: 678px;
+  background-image: url("/valide-episode.2be05a19.png");
+  background-repeat: no-repeat;
+}
+
+.categorys {
+  position: absolute;
+  background-color: #ff8500;
+  font-family: "Raleway";
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  width: 50px;
+  height: 15px;
+  margin-top: 115px;
+  margin-left: 15px;
+}
+
+.categorys--2 {
+  position: absolute;
+  margin-left: 90px;
+}
+
+.episode {
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 35px;
+  margin-top: 150px;
+}
+
+.arrow_down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  position: absolute;
+  background-color: #ff8500;
+  border-radius: 100px 100px 100px 100px;
+  width: 24px;
+  height: 24px;
+  margin-top: 150px;
+  margin-left: 265px;
+}
+
+.arow_right {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  color: white;
+  width: 24px;
+  height: 24px;
+  margin-top: 120px;
+  margin-left: 1000px;
+}
+
+
+/*# sourceMappingURL=/video.81c0026e.css.map */

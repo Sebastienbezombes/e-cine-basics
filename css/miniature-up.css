@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.miniature {
+  background-image: url("../assets/casadelpapel.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+.miniature_info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.miniature_title {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 50px;
+  width: 269px;
+  height: 76px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.miniature_director {
+  position: absolute;
+  margin-left: 25px;
+  margin-top: 135px;
+}
+
+button {
+  cursor: pointer;
+  background-color: white;
+  font-size: 16px;
+  margin-left: 50px;
+  position: absolute;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctafilm {
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-left: 280px;
+  background-color: #ff8500;
+  border: none;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctainfo {
+  font-family: "Raleway";
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  width: 210px;
+  height: 40px;
+  margin-top: 180px;
+}
+
+.miniature-ctainfo img {
+  margin-left: 10px;
+}
+
+.miniature-ctafilm img {
+  margin-left: 10px;
+}

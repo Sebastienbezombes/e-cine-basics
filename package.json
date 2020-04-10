@@ -1,0 +1,27 @@
+{
+  "name": "e-cine-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel video.pug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastienbezombes/e-cine-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastienbezombes/e-cine-basics/issues"
+  },
+  "homepage": "https://github.com/Sebastienbezombes/e-cine-basics#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4",
+    "sass": "^1.26.3"
+  }
+}
