@@ -1,0 +1,12 @@
+.search-videos1 {
+    display: flex;
+}
+
+.search-img {
+    margin-right: 18px;
+}
+.arrow-icon-search {
+    position: absolute;
+    top: 275px;
+    left: 280px;
+}

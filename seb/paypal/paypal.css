@@ -24,7 +24,7 @@ body {
 
 .paypal {
     width: 600px;
-    height: 500px;
+    height: 550px;
     background: rgba(0,0,0,0.7);
     border-radius: 6px;
     color: white;
@@ -37,6 +37,7 @@ body {
     font-size: 32px;
     margin-left: 20px;
     font-family: "roboto-bold";
+    line-height: 48px;
 }
 .description-title-paypal, .conditions-paypal {
     line-height: 27px;
@@ -93,4 +94,28 @@ body {
 
 .infos-paypal .paypal-icon {
     margin-left: 20px;
+}
+
+@media (max-width: 630px) {
+    .infos-paypal {
+        width: 350px;
+    }
+    .paypal {
+        width: 400px;
+    }
+    .cta-paypal {
+        width: 350px;
+    }
+}
+
+@media (max-width: 420px) {
+    .infos-paypal {
+        width: 260px;
+    }
+    .paypal {
+        width: 300px;
+    }
+    .cta-paypal {
+        width: 270px;
+    }
 }
