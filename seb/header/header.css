@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "roboto-medium";
+    src: url("font/Roboto-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url("font/Roboto-Regular.ttf") format("truetype");
+}
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background:#1C1C1C;
+    height: 66px;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 96px;
+    height: 25px;
+}
+
+.header-nav {
+    display: flex;
+    width: 364px;
+    height: 66px;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+    font-family: "roboto-medium";
+}
+
+.nav-first.active-link-head {
+    color: orange;
+}
+.nav-first {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-first:hover {
+    text-decoration: underline;
+    color: orange;
+  }
+
+.header-second {
+    width: 290px;
+    margin-right: 32px;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-form {
+    width: 200px;
+    height: 25px;
+    padding-right: 30px;
+    background: #E5E5E5;
+    color:#444444;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    font-family: "roboto-regular";
+}
+
+.header-form::placeholder {
+    background-image:url(img/search-icon-header.svg) ;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-size: contain;
+    text-align: end;
+    color:#444444;
+    font-family: "roboto-regular";
+  }
+
+.header-account {
+    width: 5%;
+}
+
+.account-logo {
+    width: 32px;
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .header {
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+    }
+    .header-nav {
+        height: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    li:nth-child(2) {
+        display: none;
+    }
+    .header-nav {
+        width: 300px;
+        justify-content: space-between;
+    }
+}
