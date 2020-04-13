@@ -35,24 +35,24 @@
 }
 
 button {
+  display: flex;
   cursor: pointer;
   background-color: white;
   font-size: 16px;
   margin-left: 50px;
-  position: absolute;
   width: 210px;
   height: 40px;
   margin-top: 180px;
 }
 
 .miniature-ctafilm {
-  font-family: "Raleway";
+  position: absolute;
   font-weight: bold;
-  margin-left: 280px;
   background-color: #ff8500;
   border: none;
   width: 210px;
   height: 40px;
+  margin-left: 280px;
   margin-top: 180px;
 }
 

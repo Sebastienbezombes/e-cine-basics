@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 .header {
   width: 100%;
   display: flex;
@@ -21,6 +22,15 @@
   height: 25px;
 }
 
+.categorys {
+  display: flex;
+}
+
+.categorie {
+  color: white;
+  text-decoration: none;
+}
+
 .header_nav {
   display: flex;
   width: 22%;
@@ -31,9 +41,23 @@
   list-style: none;
 }
 
-.nav_first {
+.nav {
   color: white;
   text-decoration: none;
+}
+
+.nav_modifier {
+  height: 70px;
+  color: white;
+}
+
+.nav_modifier:hover {
+  color: #ff8500;
+}
+
+.header_nav_block:hover {
+  border-bottom: 2px solid #ff8500;
+  color: #ff8500;
 }
 
 .header_second {
@@ -45,18 +69,18 @@
   width: 220px;
   height: 40px;
   padding-right: 30px;
-  background: #3d3d3d;
-  border-radius: 5px;
-  border: 1px solid #3d3d3d;
+  background: #e5e5e5;
+  border-radius: 10px;
 }
 
 ::placeholder {
-  background-image: url(../assets/Vector.png);
+  width: 220px;
+  background-image: url(../assets/search.svg);
   background-repeat: no-repeat;
   background-position-x: 30px;
   background-size: contain;
   text-align: end;
-  color: white;
+  color: #808080;
 }
 
 .header_account {

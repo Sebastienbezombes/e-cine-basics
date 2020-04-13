@@ -117,109 +117,29 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
-var bundleURL = null;
+})({"js/header.js":[function(require,module,exports) {
+var $linksHead = document.querySelectorAll(".nav");
+var $logoHeader = document.querySelector(".header-logo");
 
-function getBundleURLCached() {
-  if (!bundleURL) {
-    bundleURL = getBundleURL();
+var ActivelinkHead = function ActivelinkHead() {
+  var onLinkHead = document.querySelector(".active-link-head");
+
+  if (onLinkHead) {
+    onLinkHead.classList.remove("active-link-head");
   }
+};
 
-  return bundleURL;
-}
-
-function getBundleURL() {
-  // Attempt to find the URL of the current script and use that as the base URL
-  try {
-    throw new Error();
-  } catch (err) {
-    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
-
-    if (matches) {
-      return getBaseURL(matches[0]);
-    }
-  }
-
-  return '/';
-}
-
-function getBaseURL(url) {
-  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
-}
-
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
-var bundle = require('./bundle-url');
-
-function updateLink(link) {
-  var newLink = link.cloneNode();
-
-  newLink.onload = function () {
-    link.remove();
-  };
-
-  newLink.href = link.href.split('?')[0] + '?' + Date.now();
-  link.parentNode.insertBefore(newLink, link.nextSibling);
-}
-
-var cssTimeout = null;
-
-function reloadCSS() {
-  if (cssTimeout) {
-    return;
-  }
-
-  cssTimeout = setTimeout(function () {
-    var links = document.querySelectorAll('link[rel="stylesheet"]');
-
-    for (var i = 0; i < links.length; i++) {
-      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
-        updateLink(links[i]);
-      }
-    }
-
-    cssTimeout = null;
-  }, 50);
-}
-
-module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel/src/builtins/bundle-url.js"}],"css/header.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\assets\\search.svg":[["search.f1252315.svg","assets/search.svg"],"assets/search.svg"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/color.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/reset.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/miniature-up.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\assets\\casadelpapel.png":[["casadelpapel.71136ed2.png","assets/casadelpapel.png"],"assets/casadelpapel.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/reprendre.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\Elite-Netflix-saison-3-1.png":[["Elite-Netflix-saison-3-1.a0fec4d8.png","assets/Elite-Netflix-saison-3-1.png"],"assets/Elite-Netflix-saison-3-1.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\casadelpapel_episode.png":[["casadelpapel_episode.53998fba.png","assets/casadelpapel_episode.png"],"assets/casadelpapel_episode.png"],"C:\\Users\\PAINNOT\\Desktop\\SI Streaming\\e-cine-basics\\assets\\valide-episode.png":[["valide-episode.2be05a19.png","assets/valide-episode.png"],"assets/valide-episode.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/miniaturedown.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"./..\\assets\\flash.png":[["flash.9eaa7f28.png","assets/flash.png"],"assets/flash.png"],"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"css/footer.css":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel/src/builtins/css-loader.js"}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+$linksHead.forEach(function ($linkHead) {
+  $linkHead.addEventListener("click", function () {
+    ActivelinkHead();
+    $linkHead.classList.add("active-link-head");
+  });
+});
+$logoHeader.addEventListener("click", function () {
+  ActivelinkHead();
+  $linksHead[0].classList.add("active-link-head");
+});
+},{}],"node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -423,5 +343,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/video.81c0026e.js.map
+},{}]},{},["node_modules/parcel/src/builtins/hmr-runtime.js","js/header.js"], null)
+//# sourceMappingURL=/header.4485232e.js.map
