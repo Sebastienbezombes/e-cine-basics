@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "rob-black";
+    src: url("font/Roboto-Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: "rob-med";
+    src: url("font/Roboto-Medium.ttf") format("truetype");
+}
+
+.header {
+    height: 76px;
+    background: black;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background: url("img/fond-color_home.png"),
+                url("img/fond-img-home.png");
+                overflow-x: hidden;
+}
+
+.cta-home {
+    background: #FF8500;
+    color: white;
+    border: none;
+    width: 362px;
+    height: 36px;
+    border-radius: 6px;
+    font-family: "rob-med";
+    cursor: pointer;
+}
+
+.home {
+    width: 423px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center-home {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    font-family: "rob-black";
+    color: white;
+    margin-bottom:10px;
+}
+.description-home {
+    font-size: 18px;
+    text-align: center;
+    font-family: "rob-black";
+    color: #FF8500;
+}
+.logo-home {
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .title-home {
+        font-size: 24px;
+    }
+    .description-home {
+        font-size: 16px;
+    }
+}
+@media (max-width: 400px) {
+    .title-home {
+        font-size: 18px;
+        width: 300px;
+    }
+    .description-home {
+        font-size: 16px;
+        width: 300px;
+        line-height: 24px; 
+    }
+    .cta-home {
+        width: 300px;
+    }
+}

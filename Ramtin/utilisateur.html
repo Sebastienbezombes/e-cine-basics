@@ -1,0 +1,140 @@
+<!-- page utilisateur - Ramtin -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/utilisateur.css" />
+    <link rel="stylesheet" href="src/reset.css" />
+  </head>
+  <body class="body">
+    <!-- header -->
+    <div class="header">
+      <div class="header_first">
+        <img class="header_logo" src="./assets/E-CINE.png" />
+      </div>
+      <ul class="header_nav">
+        <li><a class="nav_first" href="#1">Accueil</a></li>
+        <li><a class="nav_first" href="2">Séries</a></li>
+        <li><a class="nav_first" href="#3">Films</a></li>
+      </ul>
+      <div class="header_second">
+        <form>
+          <input
+            class="header_form"
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Recherche un film, une série"
+          />
+        </form>
+      </div>
+      <div class="header_account">
+        <a href="#6">
+          <img class="account_logo" src="./assets/account 1.png" />
+        </a>
+      </div>
+    </div>
+    <!-- body -->
+    <div class="rectangle-utilisateur">
+      <form action="" method="get" class="information-form">
+        <h1 class="utilisateur-text">Modifier votre page</h1>
+        <h3 class="copmte-text">Compte</h3>
+        <p class="email">ramtin@gmail.com</p>
+        <p class="password-text">Mot de passe :</p>
+        <p class="password-itself">**********</p>
+        <a class="change-password" href="#">Modifier le mot de passe</a>
+        <div class="language-box">
+          <label for="language" class="language-text"
+            >Langue du site web :</label
+          >
+          <select id="language" class="language">
+            <option value="français">Français</option>
+            <option value="anglais">Anglais</option>
+          </select>
+        </div>
+        <div class="autorisation-box">
+          <label for="autorisation" class="autorisation-text"
+            >Films et séries autorisés pour :</label
+          >
+          <select id="autorisation" class="autorisation">
+            <option value="18">18</option>
+            <option value="15">15</option>
+            <option value="12">12</option>
+            <option value="Tous les âges">Tous les âges</option>
+          </select>
+        </div>
+        <h3 class="auto-play-text">Auto Play</h3>
+        <p class="auto-play-explications">
+          La prochaine vidéo disponible commence automatiquement. Pour les
+          séries, lorsque vous terminez un épisode, le suivant se lance
+          automatiquement.
+        </p>
+        <input
+          type="radio"
+          name="auto-play"
+          id="active"
+          class="active-button"
+          value="activé"
+        />
+        <label for="active" class="active-text">Activé</label>
+        <input
+          type="radio"
+          name="auto-play"
+          id="desactive"
+          class="desactive-button"
+          value="désactivé"
+        />
+        <label for="desactive" class="desactive-text">Désactivé</label>
+        <h3 class="subscribe-text">Votre abonnement</h3>
+        <h4 class="your-package-text">Votre forfait :</h4>
+        <h4 class="your-package">ULTRA HD</h4>
+        <p class="subscribe-price2">9.99 € / mois</p>
+
+        <a class="change-subscribe" href="#">Changer de forfait</a>
+        <a class="cancel-subscribe" href="#">Annuler l'abonnement</a>
+        <p class="subscribe-price">9.99 € / mois</p>
+        <h4 class="next-subscribe-text">Votre prochain frais d’abonnement :</h4>
+        <h4 class="next-subscribe">20 mai 2020</h4>
+        <img src="assets/Frame.png" class="paypal-logo" alt="paypal-logo" />
+        <a href="#" class="update-information"
+          >Mettre à jour les informations de paiement</a
+        >
+        <div class="save-cancel-buttons">
+          <input type="submit" value="Annuler" class="cancel-button" />
+          <input type="submit" value="Enregistrer" class="save-button" />
+        </div>
+      </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="footer_img">
+        <img src="./assets/E-CINE.png" />
+      </div>
+      <div class="footer_info">
+        <ul>
+          <li>Audio et Sous-titres</li>
+          <li>Presse</li>
+          <li>Nous contacter</li>
+        </ul>
+        <ul>
+          <li>Audiodescription</li>
+          <li>Relations Investisseurs</li>
+          <li>Informations légales</li>
+        </ul>
+        <ul>
+          <li>Centre d’aide</li>
+          <li>Recrutement</li>
+          <li>Préfèrences de cookies</li>
+        </ul>
+        <div class="footer_last">
+          <img src="./assets/Component 6.png" />
+        </div>
+      </div>
+    </div>
+    <div class="droits">
+      <p class="droits_text">© 2020 E-CINE, Inc. Tous droits réservés</p>
+    </div>
+  </body>
+</html>
