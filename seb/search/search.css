@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "roboto-bold";
+    src: url("font/Roboto-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url("font/Roboto-Regular.ttf") format("truetype");
+}
+
+.search-videos1 {
+    display: flex;
+}
+
+.search-img {
+    margin-right: 18px;
+}
+.arrow-icon-search {
+    position: absolute;
+    top: 275px;
+    left: 280px;
+}
+.arrow-icon-search2{
+    position: absolute;
+    top: 275px;
+    left: calc(280px*2.15);
+}
+.arrow-icon-search3{
+    position: absolute;
+    top: 275px;
+    left: calc(280px*3.3);
+}
+.arrow-icon-search4{
+    position: absolute;
+    top: 275px;
+    left: calc(280px*4.5);
+}
+.arrow-icon-search5{
+    position: absolute;
+    top: 275px;
+    left: calc(280px*5.68);
+}
+.arrow-next {
+    height: 189px;
+    width: 50px;
+    background: black;
+    position: absolute;
+    right: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-before {
+    height: 189px;
+    width: 50px;
+    background: black;
+    position: absolute;
+    left: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-next.notVisibleSearch {
+    display: none;
+}
+.video1.notVisibleSearch {
+    display: none;
+}
+.arrow-before.notVisibleSearch {
+    display: none;
+}
+
+.display-full-img {
+    display: none;
+    background: url(img/search-img-vid.png);
+}
+.display-full-img.visible {
+    display: block;
+}
+
+.full-img-watchbtn {
+    width: 147px;
+    height: 40px;
+    background: #FF8500;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    margin-right: 16px;
+    display: none;
+}
+.full-img-teasebtn {
+    width: 147px;
+    height: 40px;
+    color: white;
+    background: none;
+    border: 2px solid #FF8500;
+    border-radius: 6px;
+    display: none;
+}
+.btns-large-img {
+    display: flex;
+    position: absolute;
+    bottom: 250px;
+    left: 30px;
+}
+
+.full-img-watchbtn.visible, .full-img-teasebtn.visible {
+    display: block;
+}
+.title-large-search {
+    position: absolute;
+    top: 330px;
+    left: 30px;
+    color: white;
+    font-size: 32px;
+    width: 269px;
+    line-height: 48px;
+    font-family: "roboto-bold";
+}
+.rea-large-search {
+    position: absolute;
+    top: 450px;
+    left: 30px;
+    color: white;
+    font-size: 18px;
+    font-family: "roboto-regular";
+}
+.description-large-search {
+    position: absolute;
+    top: 490px;
+    left: 30px;
+    color: white;
+    font-size: 16px;
+    line-height: 27px;
+    width: 313px;
+    font-family: "roboto-regular";
+}
+
+.rea-large-search span {
+    font-family: "roboto-bold";
+}
+.txt-search-large {
+    display: none;
+}
+.txt-search-large.visible {
+    display: block;
+}
