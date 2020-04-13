@@ -1,0 +1,309 @@
+/* Créer un compte - Ramtin */
+@font-face {
+  font-family: "roboto bold";
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto medium";
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto italic";
+  src: url("../fonts/Roboto-Italic.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* header */
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #1c1c1c;
+  height: 66px;
+}
+
+.header_first {
+  width: 10%;
+  margin-right: 25px;
+  margin-left: 30px;
+}
+
+.header_logo {
+  width: 96px;
+  height: 25px;
+}
+
+.header_nav {
+  display: flex;
+  width: 22%;
+  height: 66px;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+}
+
+.nav_first {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav_first:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.header_second {
+  width: 25%;
+  margin-left: 328px;
+}
+
+.header_form {
+  width: 200px;
+  height: 25px;
+  padding-right: 30px;
+  background: #e5e5e5;
+  color: #444444;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+.header_form::placeholder {
+  background-image: url(../assets/search2.png);
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-size: contain;
+  text-align: end;
+  color: #444444;
+}
+
+.header_account {
+  width: 5%;
+}
+
+.account_logo {
+  width: 32px;
+  cursor: pointer;
+}
+
+/* body */
+
+.body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+}
+
+.rectangle-inscription {
+  position: relative;
+  height: 540px;
+  width: 320px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 81px;
+  margin-bottom: 81px;
+  background-color: #161616;
+}
+
+.sign-up-text {
+  color: white;
+  font-family: "roboto bold";
+  font-size: 36px;
+  text-align: center;
+  margin-top: 13px;
+}
+
+.information-form {
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
+.civilite,
+.email,
+.name,
+.last-name,
+.password {
+  color: white;
+  font-family: "roboto medium";
+  font-size: 14px;
+  display: block;
+  margin-top: 13px;
+}
+
+.madame-input,
+.monsieur-input {
+  width: 135px;
+  height: 36px;
+  background-color: #696360;
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  font-family: "roboto medium";
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.madame-input:hover,
+.monsieur-input:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ff8500;
+  background-color: white;
+}
+
+.sign-up-inputs {
+  width: 273px;
+  height: 36px;
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 4px;
+  border-style: none;
+  outline: none;
+  margin-top: 12px;
+  padding: 0 10px;
+}
+
+.sign-up-button {
+  width: 273px;
+  height: 36px;
+  background-color: #ff8500;
+  border-radius: 4px;
+  font-family: "Roboto medium";
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
+  border-style: none;
+}
+
+.sign-up-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ff8500;
+}
+
+.question {
+  color: white;
+  font-family: "roboto medium";
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.connectez-vous {
+  font-family: "roboto italic";
+  font-size: 13px;
+  margin-left: 180px;
+  margin-top: -13px;
+  text-decoration: none;
+}
+
+#connectez-vous {
+  color: #ff8500;
+  text-decoration: none;
+}
+
+#connectez-vous:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+
+.footer {
+  width: 100%;
+  background: #1c1c1c;
+  height: 200px;
+  display: flex;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  color: white;
+  font-size: 16px;
+}
+
+.footer_first {
+  width: 25%;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 5%;
+}
+
+.footer_first ul {
+  list-style: none;
+  margin-top: 17px;
+}
+
+.footer_first ul li {
+  color: white;
+  margin-top: 17px;
+  font-size: 16px;
+}
+
+.footer_second {
+  width: 25%;
+  height: 200px;
+  margin-top: 46px;
+}
+
+.footer_second ul {
+  list-style: none;
+}
+
+.footer_second ul li {
+  color: white;
+  margin-top: 17px;
+  font-size: 16px;
+}
+
+.footer_third {
+  width: 25%;
+  height: 200px;
+  margin-top: 46px;
+}
+
+.footer_third ul {
+  list-style: none;
+}
+
+.footer_third ul li {
+  color: white;
+  margin-top: 17px;
+  font-size: 16px;
+}
+
+.footer_last {
+  width: 25%;
+  height: 86px;
+  margin-top: 114px;
+}
+
+.droits {
+  width: 100%;
+  background: black;
+  height: 45px;
+}
+
+.droits_text {
+  color: white;
+  font-size: 16px;
+  margin-left: 5%;
+  padding-top: 16px;
+}
