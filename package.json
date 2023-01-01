@@ -18,7 +18,7 @@
   "homepage": "https://github.com/Sebastienbezombes/e-cine-basics#readme",
   "dependencies": {
     "jquery": "^3.4.1",
-    "parcel": "^1.12.4"
+    "parcel": "^2.8.2"
   },
   "devDependencies": {
     "pug": "^2.0.4",
